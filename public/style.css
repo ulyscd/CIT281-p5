@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+.guide {
+    display: none;
+    max-width: 90vw;
+    margin-left: 2%;
+    text-align: justify;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+.begin {
+    height: inherit;
+    border: black 10px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+#btn-begin {
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    border-radius: 4px;
+} 
+
+#btn-begin:hover {
+    border: yellow 3px solid;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.char-containers, .controls {
+    display: none;
+}
+
+.combat-log {
+    height: 500px;
+    font-size: 1rem;
+    overflow: scroll;
+    border: black solid 2px;
+}
+
+.battle-info {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+
+.ch {
+    background-color: rgb(177, 218, 103);
+    border: red 4px solid;
+}
+
+.hidden-info {
+    display: none;
+}
+.enemy {
+    color: darkred;
+}
+
+.atk-stat {
+    color: red;
+}
+
+.player {
+    font-size: 2em;
+}
+
+.hp-stat, .hp {
+    color: darkgreen;
+}
+
+.def-stat {
+    color: brown;
+}
+
+.mana-stat, .mana {
+    color: purple;
+}
+
+.sp-stat {
+    color: darkcyan;
+}
+
+.name {
+    color: darkslategray;
+    font-size: 20px;
+}
+
+.dmg {
+    color: red;
+    font-size: 20px;
+}
+
+.heal {
+    color: rgb(0, 255, 0);
+}
+
+.turns {
+    color: blue;
+    font-size: 30px;
+}
+
+#flash-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    background-color: transparent;
+    opacity: 0;
+    z-index: 999;
+    transition: opacity 0.3s ease;
+}
+.flash-yellow {
+    background-color: yellow;
+}
+.flash-red {
+    background-color: red;
+}
+.flash-green {
+    background-color: limegreen;
+}
+.flash-blue {
+    background-color: deepskyblue;
+}

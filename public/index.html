@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero v.s Opponent</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <div class="begin">
+        <button id="btn-begin">Let the battle begin!</button>
+    </div>
+    <div class="container">
+        <div class="char-containers">
+            <div class="ch" id="ch1">
+                <img alt="" src="./resources/img/opponent.webp" width="150">
+                <div class="name hp enemy">
+                </div>
+                <div class="hidden-info">
+                </div>
+                <div class="mana hidden-info">
+                </div>
+
+            </div>
+            <div class="battle-info ch1">
+                <br>
+            </div>
+            <div class="ch" id="ch2">
+                <img alt="" src="./resources/img/hero.png" width="150">
+                <div class="name" class="ch2">
+                </div>
+                <div class="hp player" class="ch2">
+                </div>
+                <div class="mana">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="btn-attack" class="hide-after-player-turn">Attack</button>
+            <button id="btn-heal" class="hide-after-player-turn">Heal</button>
+            <button id="btn-defend" class="hide-after-player-turn">Defend</button>
+            <button id="btn-next">Next</button>
+            <button id="btn-stats" class="">Player Stats</button>
+            <div name="combat-log" class="combat-log" readonly id="cLog" cols="30" rows="10"></div>
+        </div>
+
+    </div>
+    <div class="stats">
+        <div class="hp-stat">
+        </div>
+        <div class="atk-stat">
+        </div>
+        <div class="def-stat">
+        </div>
+        <div class="mana-stat">
+        </div>
+        <div class="sp-stat">
+        </div>
+    </div>
+
+    <audio class="audio">
+        <source class="source-audio" src="" type="audio/mpeg">
+    </audio>
+    <script src="./script.js"></script>
+    <div id="flash-overlay"></div>
+</body>
+
+</html>
